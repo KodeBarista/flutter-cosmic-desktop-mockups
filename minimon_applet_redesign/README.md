@@ -19,13 +19,3 @@ The goal of this redesign is to improve information hierarchy, visual consistenc
   <img src="screenshots/9.png" alt="Minimon applet redesign" width="280">
   <img src="screenshots/10.png" alt="Minimon applet redesign" width="280">
 </p>
-
-## Design Goals
-- Maintain consistency with the COSMIC desktop design language.
-- Present hardware information in a clear and organized layout.
-- Improve readability and reduce visual clutter.
-- Provide quick access to commonly used controls.
-- Make better use of available space while keeping the interface compact.
-
-## Status
-This repository contains design mockups only. It is **not** an implementation of the applet.
