@@ -1,17 +1,31 @@
-# minimon_applet_redesign
+# Minimon Applet Redesign
 
-A new Flutter project.
+A UI/UX redesign concept for the Minimon hardware monitor applet for the COSMIC desktop.
 
-## Getting Started
+The goal of this redesign is to improve information hierarchy, visual consistency, and usability while following the COSMIC design language.
 
-This project is a starting point for a Flutter application.
+## Preview
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+  <img src="screenshots/0.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/1.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/2.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/3.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/4.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/5.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/6.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/7.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/8.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/9.png" alt="Minimon applet redesign" width="280">
+  <img src="screenshots/10.png" alt="Minimon applet redesign" width="280">
+</p>
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Design Goals
+- Maintain consistency with the COSMIC desktop design language.
+- Present hardware information in a clear and organized layout.
+- Improve readability and reduce visual clutter.
+- Provide quick access to commonly used controls.
+- Make better use of available space while keeping the interface compact.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Status
+This repository contains design mockups only. It is **not** an implementation of the applet.
