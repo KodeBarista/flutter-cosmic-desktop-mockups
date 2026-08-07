@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import "comp_draw_svg.dart";
-
 class CompSegmentedButton extends StatelessWidget {
   const CompSegmentedButton({
     super.key,
@@ -24,18 +22,11 @@ class CompSegmentedButton extends StatelessWidget {
           }
 
           final itemIndex = index ~/ 2;
-          final selected = itemIndex == selectedIndex;
 
           return Expanded(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // if (selected) ...[
-                //   const CompDrawSvg(iconName: "check", size: 24,),
-                //   const SizedBox(width: 4),
-                // ],
-                items[itemIndex],
-              ],
+              children: [items[itemIndex]],
             ),
           );
         }),
