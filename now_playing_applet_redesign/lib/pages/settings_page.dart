@@ -15,7 +15,7 @@ class SettingsPage extends StatelessWidget {
     return CompPageShell(
       children: [
         CompBackRow(),
-        SizedBox(height: 8.0),
+        SizedBox(height: 20.0),
 
         Text(
           "Settings",
