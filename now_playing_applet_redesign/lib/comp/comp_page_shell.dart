@@ -1,10 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:now_playing_applet_redesign/comp/comp_draw_svg.dart';
-import 'package:now_playing_applet_redesign/data/media_info.dart';
 
 import '../constants.dart';
+import '../data/media_info.dart';
+import 'comp_draw_svg.dart';
 
 class CompPageShell extends StatelessWidget {
   const CompPageShell({super.key, required this.children});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:now_playing_applet_redesign/comp/comp_sub_header.dart';
 
 import '../comp/comp_back_row.dart';
 import '../comp/comp_page_shell.dart';
+import '../comp/comp_sub_header.dart';
 import '../comp/comp_switch.dart';
 import '../comp/comp_tile.dart';
 import '../comp/comp_tile_container.dart';

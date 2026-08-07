@@ -15,7 +15,7 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final media = mediaList[3];
+    final media = mediaList[4];
 
     return CompPageShell(
       children: [
