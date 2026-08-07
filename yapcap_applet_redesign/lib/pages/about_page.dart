@@ -3,13 +3,19 @@ import 'package:flutter/material.dart';
 import '../comp/comp_back_row.dart';
 import '../comp/comp_draw_svg.dart';
 import '../comp/comp_page_shell.dart';
+import '../comp/comp_parent_tile.dart';
 import '../comp/comp_sub_header.dart';
 import '../comp/comp_tile.dart';
 import '../comp/comp_tile_container.dart';
-import '../comp/comp_parent_tile.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
+
+  static const title = "Yapcap";
+  static const devName = "TopiCsarno";
+  static const version = "0.5.2";
+  static const license = "MPL-2.0-only";
+  static const about = "LLM quota monitor";
 
   @override
   Widget build(BuildContext context) {
@@ -23,18 +29,18 @@ class AboutPage extends StatelessWidget {
             children: [
               Image.asset("assets/logo.jpg", height: 100),
               Text(
-                "Yapcap",
+                title,
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 2),
 
-              Text("TopiCsarno", style: TextStyle(fontWeight: FontWeight.w300)),
+              Text(devName, style: TextStyle(fontWeight: FontWeight.w300)),
               SizedBox(height: 8),
 
               CompParentTile(
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                 child: Text(
-                  "0.5.2",
+                  version,
                   style: TextStyle(fontWeight: FontWeight.w300),
                 ),
               ),
@@ -61,7 +67,7 @@ class AboutPage extends StatelessWidget {
         CompSubHeader(title: "Developers"),
         CompParentTile(
           child: CompTile(
-            leading: Text("TopiCsarno"),
+            leading: Text(devName),
             trailing: CompDrawSvg(iconName: "link"),
           ),
         ),
@@ -70,13 +76,13 @@ class AboutPage extends StatelessWidget {
         CompSubHeader(title: "License"),
         CompParentTile(
           child: CompTile(
-            leading: Text("MPL-2.0-only"),
+            leading: Text(license),
             trailing: CompDrawSvg(iconName: "link"),
           ),
         ),
         SizedBox(height: 20),
 
-        Center(child: Text("LLM quota monitor for the COSMIC desktop")),
+        Center(child: Text("$about for the COSMIC desktop")),
         SizedBox(height: 4),
       ],
     );

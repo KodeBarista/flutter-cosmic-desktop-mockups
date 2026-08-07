@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
 import 'comp_divider.dart';
+import 'comp_parent_tile.dart';
 
 class CompTileContainer extends StatelessWidget {
   const CompTileContainer({
@@ -15,12 +15,7 @@ class CompTileContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      clipBehavior: Clip.antiAlias,
-      decoration: BoxDecoration(
-        borderRadius: kBorderRadius,
-        color: hideColor ? null : kCompColor.withAlpha(150),
-      ),
+    return CompParentTile(
       child: Column(
         children: [
           ListView.separated(

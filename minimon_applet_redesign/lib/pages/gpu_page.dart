@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../comp/comp_back_row.dart';
 import '../comp/comp_drop_down.dart';
 import '../comp/comp_page_shell.dart';
+import '../comp/comp_parent_tile.dart';
 import '../comp/comp_pick_color.dart';
 import '../comp/comp_switch.dart';
 import '../comp/comp_tab_bar.dart';
@@ -87,27 +88,25 @@ class GpuPage extends StatelessWidget {
         ),
         SizedBox(height: 16),
 
-        CompTileContainer(
-          children: [
-            CompTile(
-              dynamicSize: true,
-              leading: SizedBox(
-                width: 230,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Power saving mode"),
-                    Text(
-                      "Disable monitoring on battery to allow GPU to sleep if possible",
-                      style: kSubtitleStyle,
-                      maxLines: 2,
-                    ),
-                  ],
-                ),
+        CompParentTile(
+          child: CompTile(
+            dynamicSize: true,
+            leading: SizedBox(
+              width: 230,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Power saving mode"),
+                  Text(
+                    "Disable monitoring on battery to allow GPU to sleep if possible",
+                    style: kSubtitleStyle,
+                    maxLines: 2,
+                  ),
+                ],
               ),
-              trailing: CompSwitch(value: true),
             ),
-          ],
+            trailing: CompSwitch(value: true),
+          ),
         ),
       ],
     );

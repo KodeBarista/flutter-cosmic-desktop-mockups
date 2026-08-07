@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../comp/comp_parent_tile.dart';
 
 class OrderTile extends StatelessWidget {
   const OrderTile({super.key, required this.label});
@@ -11,12 +11,8 @@ class OrderTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 50,
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: kBorderRadius,
-          color: kCompColor.withAlpha(150),
-        ),
-        padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 10),
+      child: CompParentTile(
+        padding: EdgeInsets.symmetric(horizontal: 16.0),
         child: Row(
           children: [
             Icon(Icons.arrow_drop_up),

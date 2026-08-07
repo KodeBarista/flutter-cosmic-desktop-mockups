@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import '../comp/comp_back_row.dart';
 import '../comp/comp_draw_svg.dart';
 import '../comp/comp_page_shell.dart';
+import '../comp/comp_parent_tile.dart';
 import '../comp/comp_sub_header.dart';
 import '../comp/comp_tile.dart';
 import '../comp/comp_tile_container.dart';
-import '../comp/comp_parent_tile.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
@@ -16,7 +16,6 @@ class AboutPage extends StatelessWidget {
   static const version = "0.1.0";
   static const license = "MPL-2.0-only";
   static const about = "Pomodoro applet";
-
 
   @override
   Widget build(BuildContext context) {

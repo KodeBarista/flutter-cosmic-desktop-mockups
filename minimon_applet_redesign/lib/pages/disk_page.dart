@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../comp/comp_back_row.dart';
 import '../comp/comp_drop_down.dart';
 import '../comp/comp_page_shell.dart';
+import '../comp/comp_parent_tile.dart';
 import '../comp/comp_pick_color.dart';
 import '../comp/comp_switch.dart';
 import '../comp/comp_tab_bar.dart';
@@ -43,7 +44,7 @@ class DiskPage extends StatelessWidget {
         Text("Chart type"),
         SizedBox(height: 8),
         CompTabBar(
-          items: [Text("KINGSTON - 238.5 GB"), Text("ST1000L...- 931.5 GB")],
+          items: [Text("238.5 GB"), Text("931.5 GB")],
           selectedIndex: 0,
         ),
         SizedBox(height: 12),
@@ -66,13 +67,11 @@ class DiskPage extends StatelessWidget {
         ),
         SizedBox(height: 16),
 
-        CompTileContainer(
-          children: [
-            CompTile(
-              leading: Text("Combine disk write & read"),
-              trailing: CompSwitch(),
-            ),
-          ],
+        CompParentTile(
+          child: CompTile(
+            leading: Text("Combine disk write & read"),
+            trailing: CompSwitch(),
+          ),
         ),
       ],
     );

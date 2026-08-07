@@ -7,7 +7,7 @@ class CompParentTile extends StatelessWidget {
     super.key,
     required this.child,
     this.padding,
-    this.alpha=150,
+    this.alpha=100,
   });
 
   final Widget child;

@@ -31,7 +31,7 @@ class CompPageShell extends StatelessWidget {
                         borderRadius: kBorderRadius,
                         color: kBgColor.withAlpha(100),
                       ),
-                      width: 400,
+                      width: 365,
                       padding: EdgeInsets.all(16.0),
                       child: SingleChildScrollView(
                         child: Column(
