@@ -20,16 +20,6 @@ class ApplicationList extends StatelessWidget {
               desc: "An IDE for Android app developers",
             ),
             AppTile(
-              iconName: "disk-analyzer",
-              label: "Disk Analyzer",
-              desc: "Analyze drives",
-            ),
-            AppTile(
-              iconName: "disks",
-              label: "Disks",
-              desc: "Manage drives & media",
-            ),
-            AppTile(
               iconName: "edit",
               label: "COSMIC Edit",
               desc: "Text editor for the COSMIC desktop",
@@ -40,34 +30,18 @@ class ApplicationList extends StatelessWidget {
               desc: "File manager for the COSMIC desktop",
             ),
             AppTile(
-              iconName: "htop",
-              label: "Htop",
-              desc: "Show system processes",
-            ),
-            AppTile(
-              iconName: "monitor",
-              label: "COSMIC Monitor",
-              desc: "System monitor for the COSMIC desktop",
-            ),
-            AppTile(
-              iconName: "nvidia",
-              label: "Nvidia Settings",
-              desc: "Settings application for the COSMIC desktop",
-            ),
-            AppTile(
               iconName: "player",
               label: "COSMIC Player",
               desc: "Media player for the COSMIC desktop",
+            ),AppTile(
+              iconName: "reader",
+              label: "COSMIC Reader",
+              desc: "PDF reader for the COSMIC desktop",
             ),
             AppTile(
               iconName: "screenshot",
               label: "COSMIC Screenshot",
               desc: "Screenshot application for the COSMIC desktop",
-            ),
-            AppTile(
-              iconName: "steam",
-              label: "Steam",
-              desc: "Application for managing & playing games",
             ),
             AppTile(
               iconName: "store",
@@ -76,23 +50,48 @@ class ApplicationList extends StatelessWidget {
             ),
             AppTile(
               iconName: "term",
-              label: "Term",
+              label: "COSMIC Terminal",
               desc: "Terminal emulator for the COSMIC desktop",
             ),
             AppTile(
               iconName: "viewer",
-              label: "Viewer",
+              label: "COSMIC Viewer",
               desc: "View & edit images",
             ),
             AppTile(
-              iconName: "vlc",
-              label: "VLC Media Player",
-              desc: "Read, capture & broadcast your multimedia stream",
+              iconName: "disks",
+              label: "Disks",
+              desc: "Manage drives & media",
+            ),
+            AppTile(
+              iconName: "disk-analyzer",
+              label: "Disk Analyzer",
+              desc: "Check folder sizes & available disk space",
+            ),
+            AppTile(
+              iconName: "htop",
+              label: "Htop",
+              desc: "Show system processes",
+            ),
+            AppTile(
+              iconName: "nvidia",
+              label: "Nvidia Settings",
+              desc: "Settings application for the COSMIC desktop",
+            ),
+            AppTile(
+              iconName: "steam",
+              label: "Steam",
+              desc: "Application for managing & playing games",
             ),
             AppTile(
               iconName: "vs-code",
               label: "Visual Studio Code",
               desc: "Code editing redefined",
+            ),
+            AppTile(
+              iconName: "vlc",
+              label: "VLC Media Player",
+              desc: "Read, capture & broadcast your multimedia stream",
             ),
             AppTile(
               iconName: "zed",
