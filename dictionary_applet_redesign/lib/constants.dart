@@ -12,5 +12,3 @@ final kTopRadius = BorderRadius.only(
   topLeft: Radius.circular(8.0),
   topRight: Radius.circular(8.0),
 );
-
-final kSubtitleStyle = TextStyle(color: Colors.grey.shade400, fontSize: 12);
