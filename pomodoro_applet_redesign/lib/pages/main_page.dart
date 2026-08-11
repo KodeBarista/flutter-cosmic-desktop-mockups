@@ -14,12 +14,33 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isActive = false;
-    final timer = isActive ? "23:18" : "25:00";
+    final timer = isActive ? "23:18" : "40:00";
     final icon = isActive ? "pause" : "play";
+    final profiles = ["Coding", "Study", "Writing"];
+    final profileIndex = 2;
 
     return CompPageShell(
       children: [
         TopRow(),
+        SizedBox(height: 16),
+
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 16,
+          children: [
+            CompDrawSvg(iconName: "left"),
+            Container(
+              alignment: Alignment.center,
+              width: 100,
+              child: Text(
+                profiles[profileIndex],
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+              ),
+            ),
+            CompDrawSvg(iconName: "right"),
+          ],
+        ),
+        SizedBox(height: 4),
 
         Padding(
           padding: EdgeInsets.fromLTRB(16, 16, 16, 8),

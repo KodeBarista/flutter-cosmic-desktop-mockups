@@ -16,6 +16,7 @@ class CompTileContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CompParentTile(
+      alpha: hideColor ? 0 : 100,
       child: Column(
         children: [
           ListView.separated(

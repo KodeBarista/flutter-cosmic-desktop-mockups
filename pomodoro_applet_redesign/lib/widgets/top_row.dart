@@ -4,6 +4,7 @@ import '../comp/comp_draw_svg.dart';
 import '../constants.dart';
 import '../helper/nav_helper.dart';
 import '../pages/about_page.dart';
+import '../pages/profiles_page.dart';
 import '../pages/settings_page.dart';
 
 class TopRow extends StatelessWidget {
@@ -14,11 +15,17 @@ class TopRow extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(4, 4, 4, 0),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        spacing: 20,
         children: [
           CompDrawSvg(
             onTap: () => NavHelper.openPage(context, AboutPage()),
             iconName: "info",
+            color: kAccentColor,
+          ),
+          Spacer(),
+          CompDrawSvg(
+            onTap: () => NavHelper.openPage(context, ProfilesPage()),
+            iconName: "profiles",
             color: kAccentColor,
           ),
           CompDrawSvg(
