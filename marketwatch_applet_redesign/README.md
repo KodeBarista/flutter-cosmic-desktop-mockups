@@ -13,4 +13,5 @@ The goal of this redesign is to improve information hierarchy, visual consistenc
   <img src="screenshots/3.png" alt="Applet redesign" width="280">
   <img src="screenshots/4.png" alt="Applet redesign" width="280">
   <img src="screenshots/5.png" alt="Applet redesign" width="280">
+  <img src="screenshots/6.png" alt="Applet redesign" width="280">
 </p>
