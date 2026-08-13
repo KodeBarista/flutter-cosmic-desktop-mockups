@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#FFFFFF"
+   width="800px"
+   height="800px"
+   viewBox="-15 0 32 32"
+   version="1.1"
+   stroke="#FFFFFF"
+   id="svg1"
+   sodipodi:docname="exclamation.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.995"
+     inkscape:cx="399.49749"
+     inkscape:cy="400"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SVGRepo_iconCarrier" />
+  <g
+     id="SVGRepo_bgCarrier"
+     stroke-width="0" />
+  <g
+     id="SVGRepo_tracerCarrier"
+     stroke-linecap="round"
+     stroke-linejoin="round" />
+  <g
+     id="SVGRepo_iconCarrier"
+     style="fill:#000000">
+    <title
+       id="title1">exclamation</title>
+    <path
+       d="M 1.280201,20.150754 C 0.88020101,20.150754 0.44,19.670352 0.44,19.230352 V 6.84 C 0.44,6.36 0.84,6 1.28,6 1.76,6 2.12,6.36 2.12,6.84 v 12.390352 c 0,0.44 -0.359799,0.920402 -0.839799,0.920402 z M 2.48,24.76 C 2.48,25.445 1.925,26 1.24,26 0.555,26 0,25.445 0,24.76 c 0,-0.685 0.555,-1.24 1.24,-1.24 0.685,0 1.24,0.555 1.24,1.24 z"
+       id="path1"
+       style="fill:#ffffff"
+       sodipodi:nodetypes="ssssssssssss" />
+  </g>
+</svg>

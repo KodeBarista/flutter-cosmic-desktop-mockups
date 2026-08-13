@@ -17,18 +17,32 @@ class BuildRegularTextArea extends StatelessWidget {
           children: [
             SizedBox(
               height: 100,
-              child: Text(
-                "1024x8",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 28,
-                  fontWeight: FontWeight.w500,
+              child: RichText(
+                text: const TextSpan(
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 28,
+                    fontWeight: FontWeight.w500,
+                  ),
+                  children: [
+                    TextSpan(text: "1024"),
+                    TextSpan(
+                      text: "+",
+                      style: TextStyle(color: Colors.white70),
+                    ),
+                    TextSpan(text: "8"),
+                    TextSpan(
+                      text: "x",
+                      style: TextStyle(color: Colors.white70),
+                    ),
+                    TextSpan(text: "12"),
+                  ],
                 ),
               ),
             ),
             CompDivider(),
             SizedBox(height: 12),
-            Text("8192", style: TextStyle(color: Colors.white70, fontSize: 24)),
+            Text("1120", style: TextStyle(color: Colors.white70, fontSize: 24)),
           ],
         ),
       ),

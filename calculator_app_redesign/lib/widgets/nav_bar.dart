@@ -18,7 +18,7 @@ class NavBar extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         color: Color(0xFF272D33),
       ),
-      height: 636,
+      height: double.infinity,
       width: 285,
       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
       child: Column(
@@ -28,7 +28,7 @@ class NavBar extends StatelessWidget {
         spacing: 8,
         children: [
           NavBarItem(
-            isActive: true,
+            // isActive: true,
             child: Row(
               spacing: 10,
               children: [
@@ -53,7 +53,7 @@ class NavBar extends StatelessWidget {
             final option = entry.value;
 
             return NavBarItem(
-              // isActive: index == optionIndex,
+              isActive: index == optionIndex,
               child: Row(
                 spacing: 10,
                 children: [
