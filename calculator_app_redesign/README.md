@@ -1,17 +1,21 @@
-# calculator_app_redesign
+# Calculator App Redesign
 
-A new Flutter project.
+A UI/UX redesign concept for the Calculator, a calculator app for the COSMIC desktop.
 
-## Getting Started
+The goal of this redesign is to improve information hierarchy, visual consistency, and usability while following the COSMIC design language.
 
-This project is a starting point for a Flutter application.
+## Preview
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+  <img src="screenshots/0.png" alt="Applet redesign" height="303">
+  <img src="screenshots/1.png" alt="Applet redesign" width="280">
+  <img src="screenshots/2.png" alt="Applet redesign" height="303">
+  <img src="screenshots/3.png" alt="Applet redesign" width="280">
+  <img src="screenshots/4.png" alt="Applet redesign" width="280">
+  <img src="screenshots/5.png" alt="Applet redesign" width="280">
+  <img src="screenshots/6.png" alt="Applet redesign" width="280">
+  <img src="screenshots/7.png" alt="Applet redesign" width="280">
+  <img src="screenshots/8.png" alt="Applet redesign" width="280">
+  <img src="screenshots/9.png" alt="Applet redesign" width="280">
+  <img src="screenshots/10.png" alt="Applet redesign" width="280">
+</p>
