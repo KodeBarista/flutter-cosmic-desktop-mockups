@@ -18,9 +18,9 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool navbarVisible = false;
-    final currentView = CalcView.other;
-    final optionIndex = 2;
+    final bool navbarVisible = true;
+    final currentView = CalcView.scientific;
+    final optionIndex = 0;
     late Widget view;
     late double colHeight;
     String viewLabel = "";

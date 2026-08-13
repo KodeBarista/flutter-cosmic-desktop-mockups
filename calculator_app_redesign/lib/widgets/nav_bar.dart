@@ -38,6 +38,16 @@ class NavBar extends StatelessWidget {
             ),
           ),
           NavBarItem(
+            isActive: true,
+            child: Row(
+              spacing: 10,
+              children: [
+                CompDrawSvg(iconName: "science"),
+                Text("Scientific calculator"),
+              ],
+            ),
+          ),
+          NavBarItem(
             // isActive: true,
             child: Row(
               spacing: 10,
@@ -53,7 +63,7 @@ class NavBar extends StatelessWidget {
             final option = entry.value;
 
             return NavBarItem(
-              isActive: index == optionIndex,
+              // isActive: index == optionIndex,
               child: Row(
                 spacing: 10,
                 children: [
