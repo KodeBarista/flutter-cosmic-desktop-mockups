@@ -1,0 +1,78 @@
+import 'package:flutter/material.dart';
+
+import '../comp/comp_back_row.dart';
+import '../comp/comp_draw_svg.dart';
+import '../comp/comp_page_shell.dart';
+import '../comp/comp_parent_tile.dart';
+import '../comp/comp_sub_header.dart';
+import '../comp/comp_tile.dart';
+import '../comp/comp_tile_container.dart';
+
+class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
+
+  static const title = "KDE Connect";
+  static const devName = "hepp3n";
+  static const version = "0.10.0";
+  static const license = "GPL-3.0-only";
+  static const about = "Smartphone integration";
+
+  @override
+  Widget build(BuildContext context) {
+    return CompPageShell(
+      children: [
+        CompBackRow(),
+        SizedBox(height: 20.0),
+
+        Center(
+          child: Column(
+            children: [
+              CompDrawSvg(iconName: "logo", size: 70),
+              Text(
+                title,
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 2),
+
+              Text(devName),
+              SizedBox(height: 8),
+
+              CompParentTile(
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                child: Text(version),
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 16),
+
+        CompSubHeader(title: "Links"),
+        CompTileContainer(
+          children: [
+            CompTile(
+              leading: Text("Repository"),
+              trailing: CompDrawSvg(iconName: "link"),
+            ),
+            CompTile(
+              leading: Text("Support"),
+              trailing: CompDrawSvg(iconName: "link"),
+            ),
+          ],
+        ),
+        SizedBox(height: 16),
+
+        CompSubHeader(title: "License"),
+        CompParentTile(
+          child: CompTile(
+            leading: Text(license),
+            trailing: CompDrawSvg(iconName: "link"),
+          ),
+        ),
+        SizedBox(height: 20),
+
+        Center(child: Text("$about for the COSMIC desktop")),
+        SizedBox(height: 4),
+      ],
+    );
+  }
+}
