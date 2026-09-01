@@ -7,27 +7,8 @@ import '../comp/comp_sub_header.dart';
 import '../comp/comp_tile.dart';
 import '../comp/comp_tile_container.dart';
 import '../constants.dart';
+import '../widgets/battery_art.dart';
 import '../widgets/top_row.dart';
-
-const batteryAscii = '''
- ▄▄▄
-┌───┐
-│   │
-│███│
-│▒▒▒│
-│░░░│
-│░░░│
-└───┘''';
-
-const chargingAscii = '''
- ▄▄▄
-┌───┐
-│ ⚡ │
-│███│
-│▒▒▒│
-│░░░│
-│░░░│
-└───┘''';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -35,14 +16,17 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool isCharging = true;
+    final int percent = 66;
     final bool isCustomColor = true;
     // final Color? customColor = isCustomColor ? kAccentColor : null;
     // final Color? customColor = isCustomColor ? Color(0xFFC45EF6) : null;
-    // final Color? customColor = isCustomColor ? Color(0xFF8FADD7) : null;
-    final Color? customColor = isCustomColor ? Color(0xFF78DC78) : null;
-    final icon = isCharging ? chargingAscii : batteryAscii;
-    final state = isCharging ? "66% ∙ Charging" : "78% ∙ Discharging";
-    final eta = isCharging ? "19m until full" : "1hr 30m until empty";
+    final Color? customColor = isCustomColor ? Color(0xFF8FADD7) : null;
+    // final Color? customColor = isCustomColor ? Color(0xFF78DC78) : null;
+    final icon = batteryIcon(percent, isCharging);
+    final state = isCharging
+        ? "$percent% ∙ Charging"
+        : "$percent% ∙ Discharging";
+    final eta = isCharging ? "43m until full" : "6hr 27m until empty";
 
     return CompPageShell(
       children: [
