@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../comp/comp_back_row.dart';
 import '../comp/comp_draw_svg.dart';
+import '../comp/comp_drop_down.dart';
 import '../comp/comp_page_shell.dart';
 import '../comp/comp_spinner.dart';
 import '../comp/comp_sub_header.dart';
 import '../comp/comp_tile.dart';
 import '../comp/comp_tile_container.dart';
-import '../constants.dart';
-import '../widgets/accent_button.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -35,11 +34,7 @@ class SettingsPage extends StatelessWidget {
                 children: [
                   CompTile(
                     leading: Text("Set avatar"),
-                    trailing: AccentButton(
-                      label: "Open",
-                      subjectColor: Color(0xFFEFEAEA),
-                      color: kBgColor.withAlpha(120),
-                    ),
+                    trailing: CompDropDown(label: "Avatar"),
                   ),
                   CompTile(
                     leading: Text(

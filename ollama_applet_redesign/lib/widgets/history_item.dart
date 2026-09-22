@@ -37,10 +37,10 @@ class HistoryItem extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
               ),
               SizedBox(height: 4),
-              Text(date, style: TextStyle(color: Colors.white70)),
+              Text(date, style: TextStyle(color: Colors.white70, fontSize: 12)),
             ],
           ),
         ],
